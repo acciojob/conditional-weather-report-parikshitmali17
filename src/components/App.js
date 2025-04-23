@@ -1,11 +1,16 @@
 
-import React from "react";
+import React,{useState} from "react";
 import './../styles/App.css';
+import WheatherDisplay from "./WheatherDisplay";
 
 const App = () => {
+  const [temp,setTemp]=useState({temperature: 18, conditions: "Sunny"})
   return (
-    <div>
-        {/* Do not remove the main div */}
+   
+   <div>
+      
+        <WheatherDisplay data={temp}/>
+
     </div>
   )
 }
